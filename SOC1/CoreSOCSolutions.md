@@ -114,5 +114,70 @@ After detection, EDR enables actions to stop or investigate threats:
 
 **KEY IDEA** : EDR goes beyond traditional antivirus by combining advanced detection + powerful response tools, helping analysts detect, contain, and investigate modern cyber attacks effectively.
 
+# 2. Introduction to SIEM
+## a. Introduction
+* **Security Information and Event Management system** (SIEM) is the core security solution that a SOC analyst uses in the security operations center
+- Understand the different types of log sources
+- Identify the limitations of working with isolated logs
+- Recognize the importance of a SIEM solution
+- Explore the features of a SIEM solution
+- Learn various types of log sources and their ingestion in the SIEM
+- Understand the process behind alerting and alert analysis
 
+## b. Logs Everywhere, Answers Nowhere
+**Logs Everywhere** 
+<img width="926" height="792" alt="image" src="https://github.com/user-attachments/assets/9c46471a-8087-4448-b796-7b14a37068ef" />
+- Overview: In a network, devices (computers, servers, routers) continuously generate logs that record their activities -> These devices are called log sources
+  -> Logs are important for:
+    - Detecting threats
+    - Investigating incidents
+    - Troubleshooting systems
+  
+1. Host-Centric Logs Sources: Logs that capture activities inside a device (endpoint/server). Devices that generate host-centric logs include Windows, Linux, servers, etc. Some examples of host-centric logs are:
+    - File access by a user
+    - Login/authentication attempts
+    - Process execution
+    - Registry changes
+    - PowerShell activity
+      --> Sources: Windows, Linux, servers
+  
+2. Network-Centric Log Sources: Logs that capture communication between devices or with the Internet. Devices that generate network-centric logs are firewalls, IDS/IPS, routers, etc. Some examples of network-centric logs are:
+    - SSH connections
+    - FTP file access
+    - Web traffic (HTTP/HTTPS)
+    - VPN access
+    - Network file sharing
+      --> Sources: Firewalls, IDS/IPS, routers
+ 
+  **Key Idea**
+--> Both host-centric and network-centric logs together provide a complete view of activity in a network, helping detect and investigate security issues effectively.
+   
 
+**Answers Nowhere** 
+Challenges with Log Analysis .Even though logs are useful, working with them has several difficulties:
+
+* Too Many Log Sources
+- Networks have many devices generating hundreds of logs per second.
+- Logs are spread across multiple systems, making investigation slow and overwhelming.
+
+* No Centralization
+- Logs are stored on individual machines.
+- Analysts must connect to each device (via SSH, RDP, etc.) to access logs, which is inefficient and time-consuming.
+
+* Limited Context
+
+- A single log does not provide the full picture.
+- Only by correlating logs from different sources can analysts understand the real situation.
+
+Example: A file access may seem normal, but when combined with other logs, it could indicate lateral movement after a compromise.
+
+* Limited Analysis Capability
+- The large volume of logs makes manual analysis nearly impossible.
+- Analysts can easily miss important events.
+
+* Format Issues
+- Different systems generate logs in different formats.
+- This makes it difficult for analysts to understand and analyze them consistently.
+
+**Key Idea**:
+--> Logs are important, but without proper tools and centralization, they are difficult to manage and analyze effectively.
