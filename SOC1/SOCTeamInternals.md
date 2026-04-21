@@ -51,3 +51,5 @@
   -  Write a detailed comment explaining your analysis and reasoning. Then return to the dashboard and set the alert status to Closed.
  SOC Dashboard notes --> If you don’t get a flag, your selections are incorrect. You can reset the dashboard using the Restart button.
  
+* **NOTE**:
+  - Virustotal, Whois Lookup --> Look up, scan, investigate file, host, url, domain, etc..
