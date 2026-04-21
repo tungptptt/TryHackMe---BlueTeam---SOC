@@ -183,13 +183,19 @@ ex : Analyse the report associated with the hash "b8ef959a9176aef07fdca8705254a1
 - Change difficulty: Higher than host artifacts (requires changing communication behavior/tools)
 - Security value: Very high, helps detect and block malicious traffic patterns across networks
 
-## g. Tools (Challenging) 
+## g. Tools (Challenging)
+A Trojan dropped the suspicious "Stealer.exe" in the Temp folder:
+<img width="671" height="301" alt="image" src="https://github.com/user-attachments/assets/0b29cbbb-a770-40f4-ab37-8d8ebfb1488c" />
+The execution of the suspicious binary:
+<img width="652" height="42" alt="image" src="https://github.com/user-attachments/assets/59f0732b-bc06-4231-8a02-59c201e245ad" />
+
 * Top layer of the Pyramid of Pain (Tools / TTPs)
 - This is the most difficult level for attackers
 - If detected here, attackers may:
   - Give up
   - Rebuild their tools
   - Change entire attack techniques
+
 * Common attacker tools
 - Malicious executables (EXE, DLL)
 - Malicious documents (maldocs)
@@ -211,6 +217,8 @@ Example: 'Stealer.exe' dropped in Temp folder and executed
 * Fuzzy hashing
 - Used to compare similar files with small differences
 - Example: SSDeep
+<img width="502" height="310" alt="image" src="https://github.com/user-attachments/assets/e8783333-b45f-4325-86ce-ce7353d4b9fd" />
+
 - Helps detect malware variants
 
 * Key takeaway
@@ -218,3 +226,46 @@ Example: 'Stealer.exe' dropped in Temp folder and executed
 - Forces attackers to change tools and tactics completely
 - Most effective for defenders
 
+## h. TTPs (Tough) 
+* TTPs - the top of the Pyramid of Pain
+- TTPs stands for:
+  - Tactics
+  - Techniques
+  - Procedures
+- This is the highest level in the Pyramid of Pain
+- It represents full attacker behaviour mapped in MITRE ATT&CK
+
+* Example : 
+- Phishing
+- Persistence
+- Lateral movement
+- Data exfiltraion
+- Pass-the-Hash attacks
+
+* Why TTPs matter
+- Detecting TTPs makes it extremely hard for attackers to continue
+- Forces them to change entire methods and tools
+
+* Attacker options when detected
+- Rebuild tools and retrain
+- Abandon the target (most likely option)
+
+* Key Takeaway
+- TTPs are the most powerful and painful detection level
+- They represent full attacker behaviour, not just indicators
+- Primary focus of advanced threat hunting and SOC operations
+
+--> Pyramid of Pain : <img width="636" height="576" alt="image" src="https://github.com/user-attachments/assets/3fb85db8-a8de-4d1c-a0a1-93b8fb50a20c" />
+
+# 2. Cyber Kill Chain
+## a. Introduction 
+Following attack phases in this: 
+- Reconnaissance
+- Weaponization
+- Delivery
+- Exploitation
+- Installation
+- Command & Control
+- Actions on Objectives
+
+## b. Reconnaissance
