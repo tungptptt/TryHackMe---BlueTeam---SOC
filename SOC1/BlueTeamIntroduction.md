@@ -52,6 +52,13 @@ Specialized Defensie Roles: Requiring deep topic knowledge and broad experience 
   - AI Researcher: Study AI threats and how to defend against them
 
 ## d. Advancing SOC Career
-
+* SOC PATH - Starting as a SOC L1 analyst may be a great option to broaden cyber world awareness and better understand the more specialized roles.
+  - Gain core SOC skills and practice them. Related skills like red teaming or general IT would help
+  - Be proactive, stay in the loop of cyber news, and consider the SAL1 certification
+  - Prepare for an interview, learn the difference between an internal SOC and MSSP, and apply a job
+  - After working for some time in a junior position, consider preparing and advancing to more senior roles
+* Internal SOC vs MSSP
+--> MSSP : a company that delivers outsourced security services, most commonly SOC, to its clients.
+<img width="850" height="612" alt="image" src="https://github.com/user-attachments/assets/60080ddb-4c3a-4135-92b5-ad780dfb4c8e" />
 
 
