@@ -134,19 +134,19 @@ After detection, EDR enables actions to stop or investigate threats:
     - Troubleshooting systems
   
 i. Host-Centric Logs Sources: Logs that capture activities inside a device (endpoint/server). Devices that generate host-centric logs include Windows, Linux, servers, etc. Some examples of host-centric logs are:
-    - File access by a user
-    - Login/authentication attempts
-    - Process execution
-    - Registry changes
-    - PowerShell activity
+      - File access by a user
+      - Login/authentication attempts
+      - Process execution
+      - Registry changes
+      - PowerShell activity
       --> Sources: Windows, Linux, servers
   
 ii. Network-Centric Log Sources: Logs that capture communication between devices or with the Internet. Devices that generate network-centric logs are firewalls, IDS/IPS, routers, etc. Some examples of network-centric logs are:
-    - SSH connections
-    - FTP file access
-    - Web traffic (HTTP/HTTPS)
-    - VPN access
-    - Network file sharing
+      - SSH connections
+      - FTP file access
+      - Web traffic (HTTP/HTTPS)
+      - VPN access
+      - Network file sharing
       --> Sources: Firewalls, IDS/IPS, routers
  
   **Key Idea**
