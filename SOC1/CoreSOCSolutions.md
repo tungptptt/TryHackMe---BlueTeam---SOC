@@ -157,27 +157,27 @@ ii. Network-Centric Log Sources: Logs that capture communication between devices
 Challenges with Log Analysis .Even though logs are useful, working with them has several difficulties:
 
 * Too Many Log Sources
-- Networks have many devices generating hundreds of logs per second.
-- Logs are spread across multiple systems, making investigation slow and overwhelming.
+  - Networks have many devices generating hundreds of logs per second.
+  - Logs are spread across multiple systems, making investigation slow and overwhelming.
 
 * No Centralization
-- Logs are stored on individual machines.
-- Analysts must connect to each device (via SSH, RDP, etc.) to access logs, which is inefficient and time-consuming.
+  - Logs are stored on individual machines.
+  - Analysts must connect to each device (via SSH, RDP, etc.) to access logs, which is inefficient and time-consuming.
 
 * Limited Context
 
-- A single log does not provide the full picture.
-- Only by correlating logs from different sources can analysts understand the real situation.
+  - A single log does not provide the full picture.
+  - Only by correlating logs from different sources can analysts understand the real situation.
 
 Example: A file access may seem normal, but when combined with other logs, it could indicate lateral movement after a compromise.
 
 * Limited Analysis Capability
-- The large volume of logs makes manual analysis nearly impossible.
-- Analysts can easily miss important events.
+  - The large volume of logs makes manual analysis nearly impossible.
+  - Analysts can easily miss important events.
 
 * Format Issues
-- Different systems generate logs in different formats.
-- This makes it difficult for analysts to understand and analyze them consistently.
+  - Different systems generate logs in different formats.
+  - This makes it difficult for analysts to understand and analyze them consistently.
 
 **Key Idea**:
 --> Logs are important, but without proper tools and centralization, they are difficult to manage and analyze effectively.
