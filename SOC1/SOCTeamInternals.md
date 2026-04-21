@@ -39,7 +39,7 @@
   - initial strps are designed to ensure taking ownership of the assigned alert and avoid interfacing with alerts being handled by other analysts, and confirm being fully prepared to proceed with the detailed investigation.
   - Achieving it by first assigning the alert to yourself, moving it to **IN PROGRESS**, and then familliarising yourself with the alert details like its name, description, and key indicators.
 
-* **Investigation
+* **Investigation**
   - The most complex step, requiring to apply technical knowledge and experience to understand the activity and analyse its legitimacy in SIEM or EDR logs.
     1. Understand who is under threat, like the affected user, hostname, cloud, network, or website
     2. Note the action described in the alert, like whether it was a suspicious login, malware, or phishing
