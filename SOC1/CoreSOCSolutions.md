@@ -125,7 +125,7 @@ After detection, EDR enables actions to stop or investigate threats:
 - Understand the process behind alerting and alert analysis
 
 ## b. Logs Everywhere, Answers Nowhere
-**Logs Everywhere** 
+* **Logs Everywhere** 
 <img width="926" height="792" alt="image" src="https://github.com/user-attachments/assets/9c46471a-8087-4448-b796-7b14a37068ef" />
 - Overview: In a network, devices (computers, servers, routers) continuously generate logs that record their activities -> These devices are called log sources
   -> Logs are important for:
@@ -133,7 +133,7 @@ After detection, EDR enables actions to stop or investigate threats:
     - Investigating incidents
     - Troubleshooting systems
   
-1. Host-Centric Logs Sources: Logs that capture activities inside a device (endpoint/server). Devices that generate host-centric logs include Windows, Linux, servers, etc. Some examples of host-centric logs are:
+i. Host-Centric Logs Sources: Logs that capture activities inside a device (endpoint/server). Devices that generate host-centric logs include Windows, Linux, servers, etc. Some examples of host-centric logs are:
     - File access by a user
     - Login/authentication attempts
     - Process execution
@@ -141,7 +141,7 @@ After detection, EDR enables actions to stop or investigate threats:
     - PowerShell activity
       --> Sources: Windows, Linux, servers
   
-2. Network-Centric Log Sources: Logs that capture communication between devices or with the Internet. Devices that generate network-centric logs are firewalls, IDS/IPS, routers, etc. Some examples of network-centric logs are:
+ii. Network-Centric Log Sources: Logs that capture communication between devices or with the Internet. Devices that generate network-centric logs are firewalls, IDS/IPS, routers, etc. Some examples of network-centric logs are:
     - SSH connections
     - FTP file access
     - Web traffic (HTTP/HTTPS)
@@ -153,7 +153,7 @@ After detection, EDR enables actions to stop or investigate threats:
 --> Both host-centric and network-centric logs together provide a complete view of activity in a network, helping detect and investigate security issues effectively.
    
 
-**Answers Nowhere** 
+ * **Answers Nowhere** 
 Challenges with Log Analysis .Even though logs are useful, working with them has several difficulties:
 
 * Too Many Log Sources
