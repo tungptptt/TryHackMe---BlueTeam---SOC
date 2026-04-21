@@ -181,3 +181,16 @@ Example: A file access may seem normal, but when combined with other logs, it co
 
 **Key Idea**:
 --> Logs are important, but without proper tools and centralization, they are difficult to manage and analyze effectively.
+
+## c. Why SIEM?
+<img width="557" height="504" alt="image" src="https://github.com/user-attachments/assets/f7923745-5411-49b5-97ca-46fb27648bd2" />
+* SIEM (Security Information and Event Management) helps manage large volumes of logs and turn them into useful security insights by:
+
+  - Centralizing logs from multiple sources into one place
+  - Normalizing data into a consistent format for easy analysis
+  - Correlating events to detect suspicious patterns across systems
+  - Using detection rules to identify potential threats automatically
+  - Providing real-time alerts for quick response
+  - Displaying dashboards for clear visualization and reporting
+
+-->  In short, SIEM reduces noise, improves visibility, and helps security teams detect and respond to threats more efficiently.
