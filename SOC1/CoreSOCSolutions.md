@@ -129,17 +129,17 @@ After detection, EDR enables actions to stop or investigate threats:
 <img width="926" height="792" alt="image" src="https://github.com/user-attachments/assets/9c46471a-8087-4448-b796-7b14a37068ef" />
 - Overview: In a network, devices (computers, servers, routers) continuously generate logs that record their activities -> These devices are called log sources
   -> Logs are important for:
-    - Detecting threats
-    - Investigating incidents
-    - Troubleshooting systems
+  - Detecting threats
+  - Investigating incidents
+  - Troubleshooting systems
   
 i. Host-Centric Logs Sources: Logs that capture activities inside a device (endpoint/server). Devices that generate host-centric logs include Windows, Linux, servers, etc. Some examples of host-centric logs are:
-      - File access by a user
-      - Login/authentication attempts
-      - Process execution
-      - Registry changes
-      - PowerShell activity
-      --> Sources: Windows, Linux, servers
+  - File access by a user
+  - Login/authentication attempts
+  - Process execution
+  - Registry changes
+  - PowerShell activity
+  --> Sources: Windows, Linux, servers
   
 ii. Network-Centric Log Sources: Logs that capture communication between devices or with the Internet. Devices that generate network-centric logs are firewalls, IDS/IPS, routers, etc. Some examples of network-centric logs are:
       - SSH connections
