@@ -22,6 +22,7 @@
    - Participate in a bigger incident, such as a full-scale ransomare attack
    - Team up with your teammates to build detection rules and automations
    - Go beyond cyber and understand how companies operate from the inside
+ 
   ## c. A day in the life of a security analyst  
   - During a busy 8-hour shift, there is a mountain of "tickets" - the alerts and tasks that need to resolve in a timely manner.
     - Escalating the alert with the malicious IP to Senior Analyst
@@ -31,21 +32,26 @@
 - Understand the concept and purpose of the Blue Team
 - Explore a place of the SOC within the company structure
 - Find out about your career path as a SOC L1 analyst
+
 ## b. Security Hierachy
 <img width="1190" height="500" alt="image" src="https://github.com/user-attachments/assets/72adf905-3cbf-4827-83c3-c5feef7a7169" /> - CISO - Senior role typically makes key cyber security decisions
 - Blue team - The common role name for roles like SOC analysts and engineers
+
 ## c. Meet the Blue Team
 Security Operations Center (SOC): SOC is the central hub for an organization's cyber security - they are the first line of defense, work with various alerts, and handle most attacks
 <img width="844" height="141" alt="image" src="https://github.com/user-attachments/assets/5b29b197-4860-4424-a558-0e0ccf2685eb" />
+
 Cyber Incident Response Team (CIRT): If SOC expertise is not enough or the incident goes out of control, calling the "firefighters" - CIRT, also called CSIRT or CERT. 
 <img width="847" height="179" alt="image" src="https://github.com/user-attachments/assets/de578932-9f27-4c95-afb9-fce3baa2d6d5" />
+
 Specialized Defensie Roles: Requiring deep topic knowledge and broad experience in broader fields like SOC or IT
 <img width="828" height="134" alt="image" src="https://github.com/user-attachments/assets/f87ad424-6e98-4250-a549-4e2907677ae6" />
   - Digital Forensics Analyst: Uncover hidden threats in disk
   - Threat Intelligence Analyst: Gather data about emerging threat groups
   - AppSec Engineer: Maintain a secure software development lifecycle
   - AI Researcher: Study AI threats and how to defend against them
-## d. 
+
+## d. Advancing SOC Career
 
 
 
