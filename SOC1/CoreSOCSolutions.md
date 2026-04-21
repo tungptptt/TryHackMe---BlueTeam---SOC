@@ -194,3 +194,72 @@ Example: A file access may seem normal, but when combined with other logs, it co
   - Displaying dashboards for clear visualization and reporting
 
 -->  In short, SIEM reduces noise, improves visibility, and helps security teams detect and respond to threats more efficiently.
+
+## d. Log Sources and Ingestion
+ * Log Sources
+- Windows: Uses Event Viewer, each event has a unique Event ID
+- Linux: Logs stored in /var/log/:
+    - auth.log / secure: authentication
+    - cron: scheduled jobs
+    - httpd: web server logs
+    - kern: kernel events
+- Web Server (Apache):
+    - Records requests/responses (IP, URL, status code, user-agent)
+    -Useful for detecting web attacks
+
+* Log Ingestion
+
+Ways to send logs to SIEM:
+- Agent/Forwarder: Installed on endpoints, sends logs automatically (most common, e.g. Splunk)
+- Syslog: Standard protocol for real-time log transfer
+- Manual Upload: Upload logs for quick/offline analysis
+- Port Forwarding: Devices send logs to a listening SIEM port
+
+* Importance
+- Logs help detect security issues and attacks
+- SIEM functions:
+  - Collect
+  - Normalize
+  - Analyze
+  - Alert
+  -->  Correlating logs reveals full attack patterns
+## e. Alerting Process and Analysis
+* How SIEM triggers alerts
+- SIEM uses detection rules
+- Rules are logical IF–THEN conditions based on logs
+Examples:
+- Multiple failed logins → brute-force alert
+- Successful login after failures → suspicious
+- USB insertion → alert if restricted
+- High outbound traffic → possible data exfiltration
+- How detection rules are created
+
+Use-case 1: Log deletion
+- Event ID 104 indicates log clearing
+Rule:
+If LogSource = WinEventLog and EventID = 104 → trigger alert
+
+Use-case 2: whoami command
+
+- Event ID 4688 indicates process creation
+Rule:
+If LogSource = WinEventLog and EventID = 4688 and ProcessName contains "whoami" → trigger alert
+
+* Note:
+- Rules depend on field-value pairs
+- Normalized logs are important
+- Alert investigation
+
+* When an alert is triggered:
+- Check SIEM dashboards (e.g. Splunk)
+- Analyze related logs
+- Review the triggered rule
+
+Outcomes:
+- False Positive → tune the rule
+- True Positive → take action:
+  - Investigate further
+  - Contact asset owner
+  - Isolate infected host
+  - Block malicious IP
+  
