@@ -139,14 +139,15 @@ i. Host-Centric Logs Sources: Logs that capture activities inside a device (endp
   - Process execution
   - Registry changes
   - PowerShell activity
+
   --> Sources: Windows, Linux, servers
   
 ii. Network-Centric Log Sources: Logs that capture communication between devices or with the Internet. Devices that generate network-centric logs are firewalls, IDS/IPS, routers, etc. Some examples of network-centric logs are:
-      - SSH connections
-      - FTP file access
-      - Web traffic (HTTP/HTTPS)
-      - VPN access
-      - Network file sharing
+  - SSH connections
+  - FTP file access
+  - Web traffic (HTTP/HTTPS)
+  - VPN access
+  - Network file sharing
       --> Sources: Firewalls, IDS/IPS, routers
  
   **Key Idea**
