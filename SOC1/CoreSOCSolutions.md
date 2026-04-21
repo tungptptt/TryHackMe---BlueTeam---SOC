@@ -152,8 +152,7 @@ ii. Network-Centric Log Sources: Logs that capture communication between devices
   **Key Idea**
 --> Both host-centric and network-centric logs together provide a complete view of activity in a network, helping detect and investigate security issues effectively.
    
-
- * **Answers Nowhere** 
+**Answers Nowhere** 
 Challenges with Log Analysis .Even though logs are useful, working with them has several difficulties:
 
 * Too Many Log Sources
