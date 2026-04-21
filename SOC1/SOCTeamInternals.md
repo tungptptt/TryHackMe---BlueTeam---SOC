@@ -35,8 +35,8 @@
 * Sticking to the **Alert Triage** 
 <img width="1231" height="428" alt="image" src="https://github.com/user-attachments/assets/1c168900-390d-4461-8e46-3c9ec26c270d" />
 
-* **Initail Actions**
-  - initial strps are designed to ensure taking ownership of the assigned alert and avoid interfacing with alerts being handled by other analysts, and confirm being fully prepared to proceed with the detailed investigation.
+* **Initial Actions**
+  - Initial strps are designed to ensure taking ownership of the assigned alert and avoid interfacing with alerts being handled by other analysts, and confirm being fully prepared to proceed with the detailed investigation.
   - Achieving it by first assigning the alert to yourself, moving it to **IN PROGRESS**, and then familliarising yourself with the alert details like its name, description, and key indicators.
 
 * **Investigation**
@@ -48,8 +48,71 @@
    
 * **Final Actions**
   -  Decide whether the alert is a True Positive (malicious) or False Positive (benign).
-  -  Write a detailed comment explaining your analysis and reasoning. Then return to the dashboard and set the alert status to Closed.
- SOC Dashboard notes --> If you don’t get a flag, your selections are incorrect. You can reset the dashboard using the Restart button.
+  -  Write a detailed comment explaining your analysis and reasoning. Then return to the dashboard and set the alert status to "closed"
  
 * **NOTE**:
   - Virustotal, Whois Lookup --> Look up, scan, investigate file, host, url, domain, etc..
+
+# 2. SOC L1 Alert Reporting
+## a. Introduction 
+- Understand the need for SOC alert reporting and escalation
+- Learn how to write alert comments or case reports properly
+- Explore escalation methods and communication best practices
+- Apply the knowledge to triage alerts in a simulated environment
+- Feel more confident in SOC Simulator and during SAL1 certification
+## b. Alert Funnel 
+- L1 analysts receive the alerts in a SIEM, EDR, or a ticket management platform.
+- Most of the alerts are closed as False Positives or are handled on L1 level, but complex and threatening ones are sent to L2 that remediate most breaches.
+- New terms : reporting, escalation, and communication.
+<img width="971" height="449" alt="image" src="https://github.com/user-attachments/assets/26cbfb04-4e97-4ece-b94e-8184ccc4e3d8" />
+
+* **Alert Reporting**
+  - The process of formally describing alert details and findings
+  - Depending on team standards and alert severity, instead of a short alert comment, you can be required to document your investigation in detail, ensuring all relevant evidence is included.
+    --> This is especially important for True Positives, which require escalation
+
+* **Alert Escalation**
+  - The process of passing suspicious alerts to an L2 analyst for review.
+  - If the True Positive alert requires additional actions or deeper investigation, escalate it to the L2 analyst for further review following the agreed procedures.
+
+* **Communication**
+  - May also need to communicate other departments during or after the analysis.
+
+## c. Reporting Guide
+- It is essential for L1 analysts to write reports in addition to making them as True or False Positives
+- Having L1 analysts write alert reports serves several key purpose: 
+<img width="1326" height="1022" alt="image" src="https://github.com/user-attachments/assets/e2902db1-4942-49fe-8c64-012ce965e62b" />
+
+**Report Format**
+Recommand following the **FIVE Ws** approach and including at least these items in the report:
+* **Who**: Which user logs in, runs the command, or downloads the file
+* **What**: What exact action or event sequence was performed
+* **When**: When exactly did the suspicious activity start and ended
+* **Where**: Which device, IP, or website was involved in the alert
+* **Why**: The most important W, the reasoning for your final verdict
+
+Example : <img width="1851" height="563" alt="image" src="https://github.com/user-attachments/assets/5101a8ac-9e40-459e-a612-34d3fb2c0e2b" />
+
+## d. Escalation Guide
+
+**Recommandations** 
+ 1. The alert is an indicator of a major cyberattack requiring deeper investigation or DFIR
+ 2. Remediation actions like malware removal, host isolation, or password reset are required
+ 3. Communication with customers, partners, management, or law enforcement agencies is required
+ 4. You just do not fully understand the alert and need some help from more senior analysts
+
+
+**Escalation Steps** 
+- To escalate the alert, in most cases, all you have to do is to reassign the alert to the L2 on shift and ping them in corporate chat or in person. In some teams though, you may be required to create a formal written escalation request with dozens of required fields.
+- No matter what the agreements are, L2 will eventually receive the ticket from you, read your report, and contact you in case of any questions. Once everything is clear, the L2 analyst will typically research the alert details further, validate if the alert is indeed a True Positive, communicate with other departments if needed, and, for major incidents, start a formal Incident Response process.
+<img width="3010" height="872" alt="image" src="https://github.com/user-attachments/assets/798cea2c-7cc1-4693-a558-775265811e04" />
+
+**Requesting L2 Support** 
+- It is generally fine for L1 to request senior support if something is unclear. Especially in your first months, it's always better to discuss the alert and clarify SOC procedures than to blindly close the alert you don't understand yourself. The procedures for requesting support may differ, but the flow generally looks like this:
+<img width="3014" height="772" alt="image" src="https://github.com/user-attachments/assets/6ce99a6a-5577-4b91-8478-e504ee77ea2b" />
+
+## e. SOC Communication 
+- The escalation and reporting topics should sound straightforward and logical
+- Should be prepared for unexpected scenarios and know what to do in critical cases. 
+
+
